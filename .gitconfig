@@ -1,3 +1,5 @@
 [user]
 	email = redsoxfantom@gmail.com
 	name = Tom English
+[push]
+	default = simple
