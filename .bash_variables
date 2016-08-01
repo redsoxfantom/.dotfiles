@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Set up variables for using rbenv
+export PATH="$HOME/.rbenv/bin:$PATH"
