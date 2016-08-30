@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for dir in ./*
+do
+   if [ -d "$dir/.git" ]; then
+      echo Executing git "$@" on $dir
+      cd $dir
+      git "$@"
+      cd ..
+   fi
+done
