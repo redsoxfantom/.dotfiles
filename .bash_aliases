@@ -11,4 +11,5 @@ alias sa='sudo apt-get'
 alias g='git'
 
 # server logins
-alias homeserver='ssh pi@$HOME_SERVER -p 12102 -i /home/tom/.ssh/home_server'
+alias homeserver='ssh pi@$SSH_SERVER_HOME -p 12102 -i /home/tom/.ssh/home_server'
+alias awayserver='ssh pi@$SSH_SERVER_AWAY -p 12102 -i /home/tom/.ssh/home_server'
