@@ -107,6 +107,13 @@ if [ -f ~/.bash_variables ]; then
     . ~/.bash_variables
 fi
 
+#
+# Host-specific files
+#
+if [ -f ~/.bash_host_specific ]; then
+   . ~/.bash_host_specific
+fi
+
 # Initialize rbenv
 eval "$(rbenv init -)"
 
