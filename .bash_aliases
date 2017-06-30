@@ -2,6 +2,7 @@
 alias lls='ls -la'
 alias ..='cd ..'
 alias where='which'
+alias wget-site='wget --recursive --page-requisites --html-extension --convert-links --no-parent'
 
 # Package Management
 alias sai='sudo apt-get install'
