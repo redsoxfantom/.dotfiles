@@ -3,6 +3,7 @@ alias lls='ls -la'
 alias ..='cd ..'
 alias where='which'
 alias wget-site='wget --recursive --page-requisites --html-extension --convert-links --no-parent'
+alias ding="play -q /home/tom/ding.wav"
 
 # Package Management
 alias sai='sudo apt-get install'
