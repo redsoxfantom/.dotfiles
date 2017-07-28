@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sudo apt-get install sox
+
 shopt -s dotglob
 cp -r . ~
 shopt -u dotglob
