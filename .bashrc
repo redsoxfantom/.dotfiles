@@ -114,9 +114,6 @@ if [ -f ~/.bash_host_specific ]; then
    . ~/.bash_host_specific
 fi
 
-# Initialize rbenv
-eval "$(rbenv init -)"
-
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
