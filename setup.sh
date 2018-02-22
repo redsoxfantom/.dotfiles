@@ -6,7 +6,7 @@ cp .bash_variables $HOME
 cp .vimrc $HOME
 
 diff -u  ./.bashrc $HOME/.bashrc > ./.bashrc.patch
-currentdir=$(PWD)
+currentdir=$(pwd)
 cd $HOME
 patch < $currentdir/.bashrc.patch
 cd -
