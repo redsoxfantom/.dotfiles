@@ -1,11 +1,13 @@
 #!/bin/bash
 
-sudo apt-get install sox
+cp -r ./bin $HOME
+cp .bash_aliases $HOME
+cp .bash_variables $HOME
+cp .vimrc $HOME
 
-shopt -s dotglob
-cp -r . ~
-shopt -u dotglob
-
-cd ~
-rm -rf dotfile
-rm setup.sh
+diff -u  ./.bashrc $HOME/.bashrc > ./.bashrc.patch
+currentdir=$(PWD)
+cd $HOME
+patch < $currentdir/.bashrc.patch
+cd -
+rm .bashrc.patch
