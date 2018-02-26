@@ -1,5 +1,4 @@
 currentdir="$1"
-echo "$currentdir"
 
 # Alias definitions.
 if [ -f $currentdir/.bash_aliases ]; then
