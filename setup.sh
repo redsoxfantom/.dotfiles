@@ -1,13 +1,13 @@
 #!/bin/bash
 
-cp -r ./bin $HOME
-cp .bash_aliases $HOME
-cp .bash_variables $HOME
-cp .vimrc $HOME
+currentdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+target="$HOME/.profile"
 
-diff -u  ./.bashrc $HOME/.bashrc > ./.bashrc.patch
-currentdir=$(pwd)
-cd $HOME
-patch < $currentdir/.bashrc.patch
-cd -
-rm .bashrc.patch
+cp -r ./bin $HOME
+cp .vimrc $HOME
+cp .bash_host_specific $HOME
+
+echo "#.dotfiles" >> $target
+echo "if [ -f $currentdir/.bashrc ]; then" >> $target
+echo "\tsource $currentdir/.bashrc" >> $target
+echo "fi" >> $target
