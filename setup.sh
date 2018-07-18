@@ -7,8 +7,6 @@ echo "Copying $currentdir/bin to $HOME..."
 cp -r $currentdir/bin $HOME
 echo "Copying $currentdir/.vimrc to $HOME..."
 cp $currentdir/.vimrc $HOME
-echo "Copying $currentdir/.bash_host_specific to $HOME. Insert any host-specific commands to be run on login here..."
-cp $currentdir/.bash_host_specific $HOME
 
 echo "Updating $target to source $currentdir/.bashrc on login..."
 echo "#.dotfiles" >> $target
