@@ -3,8 +3,6 @@
 currentdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 target="$HOME/.bashrc"
 
-echo "Copying $currentdir/bin to $HOME..."
-cp -r $currentdir/bin $HOME
 echo "Copying $currentdir/.vimrc to $HOME..."
 cp $currentdir/.vimrc $HOME
 echo "Copying host specific bash file to $HOME..."
