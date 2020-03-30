@@ -4,4 +4,4 @@
 export SSH_SERVER_HOME="192.168.1.7"
 export SSH_SERVER_AWAY="tomenglish.noip.me"
 
-export PATH="$PATH:$HOME/dotfiles`/bin"
+export PATH="$PATH:$HOME/.dotfiles/bin"
